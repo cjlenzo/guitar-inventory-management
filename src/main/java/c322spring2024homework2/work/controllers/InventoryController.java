@@ -4,7 +4,6 @@ import c322spring2024homework2.work.model.Guitar;
 import c322spring2024homework2.work.repository.InventoryRepository;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,11 +40,11 @@ public class InventoryController {
         try {
             String sN = data.getSerialNumber();
             double p = data.getPrice();
-            String b = data.getBuilder();
+            String b = data.getBuilder().toString();
             String m = data.getModel();
-            String t = data.getType();
-            String bW = data.getBackWood();
-            String tW = data.getTopWood();
+            String t = data.getType().toString();
+            String bW = data.getBackWood().toString();
+            String tW = data.getTopWood().toString();
             Guitar newGuitar = new Guitar(sN, p, b, m, t, bW, tW);
             boolean returnValue = inventoryRepository.addGuitar(newGuitar);
             return returnValue;

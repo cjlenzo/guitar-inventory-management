@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Homework 2 submission, Hopefully actions works." />
+    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Homework 2 submission, Hopefully actions works. Part 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitars_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/guitars_database.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Guitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/c322spring2024homework2/work/repository/InventoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/c322spring2024homework2/work/repository/InventoryRepositoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,29 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/colin/IdeaProjects/c322-spring2024-homework2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/colin/IdeaProjects/c322-spring2024-homework2/src/main/java/org/example/Main.java",
-    "spring.configuration.checksum": "67e92c8765a9bc7fb2d335c459de9eb5",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/colin/IdeaProjects/c322-spring2024-homework2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/colin/IdeaProjects/c322-spring2024-homework2/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;67e92c8765a9bc7fb2d335c459de9eb5&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,6 +99,14 @@
       <workItem from="1706217242902" duration="2994000" />
       <workItem from="1706466660201" duration="3084000" />
       <workItem from="1706493450122" duration="5744000" />
+      <workItem from="1706499316091" duration="655000" />
+      <workItem from="1706569252026" duration="286000" />
+      <workItem from="1706805463783" duration="83000" />
+      <workItem from="1706806531377" duration="696000" />
+      <workItem from="1706807713946" duration="261000" />
+      <workItem from="1707158281253" duration="2409000" />
+      <workItem from="1707174754535" duration="3601000" />
+      <workItem from="1707187470863" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 2 submission, Hopefully actions works.">
       <option name="closed" value="true" />
@@ -93,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706499191174</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Homework 2 submission, Hopefully actions works. Part 2">
+      <option name="closed" value="true" />
+      <created>1706499370264</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706499370264</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework 2 submission, Hopefully actions works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 2 submission, Hopefully actions works." />
+    <MESSAGE value="Homework 2 submission, Hopefully actions works. Part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 2 submission, Hopefully actions works. Part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
