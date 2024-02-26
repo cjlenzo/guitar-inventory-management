@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Homework 2 submission, Hopefully actions works. Part 2">
+    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Homework 5 Part 1 submission">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guitars_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/guitars_database.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Guitar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/c322spring2024homework2/work/repository/InventoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/c322spring2024homework2/work/repository/InventoryRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="homework3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,8 +51,8 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "homework3",
-    "last_opened_file_path": "C:/Users/colin/IdeaProjects/ducks-service-1",
+    "git-widget-placeholder": "homework5",
+    "last_opened_file_path": "C:/Users/colin/IdeaProjects/c322-spring2024-homework2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,7 +108,12 @@
       <workItem from="1707330328103" duration="1680000" />
       <workItem from="1707847649385" duration="623000" />
       <workItem from="1707917342557" duration="16000" />
-      <workItem from="1708455434890" duration="15997000" />
+      <workItem from="1708455434890" duration="16738000" />
+      <workItem from="1708539422093" duration="42000" />
+      <workItem from="1708539471965" duration="11000" />
+      <workItem from="1708541406088" duration="722000" />
+      <workItem from="1708620231261" duration="31000" />
+      <workItem from="1708905249059" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 2 submission, Hopefully actions works.">
       <option name="closed" value="true" />
@@ -139,17 +139,37 @@
       <option name="project" value="LOCAL" />
       <updated>1707188428284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Homework 5 Part 1 submission">
+      <option name="closed" value="true" />
+      <created>1708481068033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708481068033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework 2 submission, Hopefully actions works." />
     <MESSAGE value="Homework 2 submission, Hopefully actions works. Part 2" />
     <MESSAGE value="Homework 3 Part 1 Submission" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 3 Part 1 Submission" />
+    <MESSAGE value="Homework 5 Part 1 submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 5 Part 1 submission" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
