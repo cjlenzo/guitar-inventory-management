@@ -1,7 +1,7 @@
-123456789,100.0,Fender,Stratocaster,Electric,Maple,Birch
-111111111,100.0,Fender,A,Electric,Maple,Birch
-222222222,300.0,Gibson,X,Acoustic,Mahogany,Spruce
-333333333,150.0,Fender,Telecaster,Electric,Oak,Redwood
-444444444,200.0,Gibson,Les Paul,Electric,Birch,Oak
-555555555,250.0,Yamaha,M,Acoustic,Spruce,Maple
-666666666,175.0,Yamaha,L,Bass,Willow,Birch
+123456789,100.0,Fender,Stratocaster,Electric,Indian Rosewood,Maple
+111111111,100.0,Fender,A,Electric,Maple,Unspecified
+222222222,300.0,Gibson,X,Acoustic,Mahogany,Unspecified
+333333333,150.0,Fender,Telecaster,Electric,Unspecified,Unspecified
+444444444,200.0,Gibson,Les Paul,Electric,Unspecified,Unspecified
+555555555,250.0,Unspecified,M,Acoustic,Unspecified,Maple
+666666666,500.0,Gibson,M,Electric,Mahogany,Cocobolo

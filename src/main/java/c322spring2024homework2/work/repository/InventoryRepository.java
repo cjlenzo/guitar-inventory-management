@@ -31,7 +31,7 @@ public class InventoryRepository {
 
     public boolean addGuitar(Guitar guitarToAdd) throws IOException {
         Path path = Path.of(DATABASE_NAME);
-        String data = guitarToAdd.getSerialNumber() + "," + guitarToAdd.getPrice() + "," + guitarToAdd.getBuilder() + "," + guitarToAdd.getModel() + "," + guitarToAdd.getType() + "," + guitarToAdd.getBackWood() + "," + guitarToAdd.getTopWood() + NEW_LINE;
+        String data = guitarToAdd.getSerialNumber() + "," + guitarToAdd.getPrice() + "," + guitarToAdd.getBuilder().toString() + "," + guitarToAdd.getModel() + "," + guitarToAdd.getType().toString() + "," + guitarToAdd.getBackWood().toString() + "," + guitarToAdd.getTopWood().toString() + NEW_LINE;
         Guitar foundGuitarWithSameSerial = getGuitar(guitarToAdd.getSerialNumber());
         if (foundGuitarWithSameSerial == null) {
             appendToFile(path, data);
@@ -49,11 +49,11 @@ public class InventoryRepository {
             String checkSN = guitarData[0];
             if (checkSN.equals(serialNumber)) {
                 double checkPrice = Double.parseDouble(guitarData[1]);
-                String checkBuilder = guitarData[2];
+                Guitar.Builder checkBuilder = Guitar.Builder.toEnum(guitarData[2]);
                 String checkModel = guitarData[3];
-                String checkType = guitarData[4];
-                String checkBackWood = guitarData[5];
-                String checkTopWood = guitarData[6];
+                Guitar.Type checkType = Guitar.Type.toEnum(guitarData[4]);
+                Guitar.Wood checkBackWood = Guitar.Wood.toEnum(guitarData[5]);
+                Guitar.Wood checkTopWood = Guitar.Wood.toEnum(guitarData[6]);
                 returnGuitar = new Guitar(checkSN, checkPrice, checkBuilder, checkModel, checkType, checkBackWood, checkTopWood);
                 found = true;
                 break;
@@ -75,18 +75,18 @@ public class InventoryRepository {
             String[] guitarData = line.split(",");
             String checkSN = guitarData[0];
             double checkPrice = Double.parseDouble(guitarData[1]);
-            String checkBuilder = guitarData[2];
+            Guitar.Builder checkBuilder = Guitar.Builder.toEnum(guitarData[2]);
             String checkModel = guitarData[3];
-            String checkType = guitarData[4];
-            String checkBackWood = guitarData[5];
-            String checkTopWood = guitarData[6];
+            Guitar.Type checkType = Guitar.Type.toEnum(guitarData[4]);
+            Guitar.Wood checkBackWood = Guitar.Wood.toEnum(guitarData[5]);
+            Guitar.Wood checkTopWood = Guitar.Wood.toEnum(guitarData[6]);
             if (searchGuitar.getSerialNumber().equals(checkSN) || searchGuitar.getSerialNumber().isEmpty()) {
                 if (searchGuitar.getPrice() == checkPrice || searchGuitar.getPrice() == -1) {
-                    if (searchGuitar.getBuilder().equals(checkBuilder) || searchGuitar.getBuilder().isEmpty()) {
+                    if (searchGuitar.getBuilder() == checkBuilder || searchGuitar.getBuilder() == Guitar.Builder.UNSPECIFIED) {
                         if (searchGuitar.getModel().equals(checkModel) || searchGuitar.getModel().isEmpty()) {
-                            if (searchGuitar.getType().equals(checkType) || searchGuitar.getType().isEmpty()) {
-                                if (searchGuitar.getBackWood().equals(checkBackWood) || searchGuitar.getBackWood().isEmpty()) {
-                                    if (searchGuitar.getTopWood().equals(checkTopWood) || searchGuitar.getTopWood().isEmpty()) {
+                            if (searchGuitar.getType() == checkType || searchGuitar.getType() == Guitar.Type.UNSPECIFIED) {
+                                if (searchGuitar.getBackWood() == checkBackWood|| searchGuitar.getBackWood() == Guitar.Wood.UNSPECIFIED) {
+                                    if (searchGuitar.getTopWood() == checkTopWood || searchGuitar.getTopWood() == Guitar.Wood.UNSPECIFIED) {
                                         Guitar guitar = new Guitar(checkSN, checkPrice, checkBuilder, checkModel, checkType, checkBackWood, checkTopWood);
                                         returnList.add(guitar);
                                     }
