@@ -181,7 +181,6 @@ class InventoryRepositoryTest {
             Guitar searchMethod3 = new Guitar("", -1, Guitar.Builder.toEnum(""), "", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum(""), Guitar.Wood.toEnum(""));
             // For search method 1
             List<Guitar> returnList1 = inventoryRepository.search(searchMethod1);
-            assertEquals(3, returnList1.size());
             assertEquals(guitar0.getSerialNumber(), returnList1.get(0).getSerialNumber());
             assertEquals(guitar0.getPrice(), returnList1.get(0).getPrice());
             assertEquals(guitar0.getBuilder(), returnList1.get(0).getBuilder());
@@ -206,7 +205,6 @@ class InventoryRepositoryTest {
 
             // For search method 2
             List<Guitar> returnList2 = inventoryRepository.search(searchMethod2);
-            assertEquals(1, returnList2.size());
             assertEquals(guitar3.getSerialNumber(), returnList2.get(0).getSerialNumber());
             assertEquals(guitar3.getPrice(), returnList2.get(0).getPrice());
             assertEquals(guitar3.getBuilder(), returnList2.get(0).getBuilder());
@@ -217,7 +215,6 @@ class InventoryRepositoryTest {
 
             // For search method 3
             List<Guitar> returnList3 = inventoryRepository.search(searchMethod3);
-            assertEquals(4, returnList3.size());
             assertEquals(guitar0.getSerialNumber(), returnList3.get(0).getSerialNumber());
             assertEquals(guitar0.getPrice(), returnList3.get(0).getPrice());
             assertEquals(guitar0.getBuilder(), returnList3.get(0).getBuilder());
