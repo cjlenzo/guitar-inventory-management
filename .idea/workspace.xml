@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Changes for docker and access token 2">
+    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Changes for lab 7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/Jwks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/KeyGeneratorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/UserDetailsSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitars_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/guitars_database.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +26,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Dockerfile" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +79,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/colin/IdeaProjects/guitar-inventory-management&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/colin/IdeaProjects/c322-lab9-backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -135,6 +147,10 @@
       <workItem from="1709156677100" duration="1308000" />
       <workItem from="1709158174048" duration="185000" />
       <workItem from="1709158634703" duration="1356000" />
+      <workItem from="1709789260024" duration="722000" />
+      <workItem from="1710814803897" duration="45000" />
+      <workItem from="1712863085595" duration="140000" />
+      <workItem from="1712870138633" duration="4392000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 2 submission, Hopefully actions works.">
       <option name="closed" value="true" />
@@ -200,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709146436825</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes for lab 7">
+      <option name="closed" value="true" />
+      <created>1709790402032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709790402032</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +249,8 @@
     <MESSAGE value="Homework 5 Submission" />
     <MESSAGE value="Changes for docker and access token" />
     <MESSAGE value="Changes for docker and access token 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes for docker and access token 2" />
+    <MESSAGE value="Changes for lab 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes for lab 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

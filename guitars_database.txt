@@ -5,3 +5,5 @@
 444444444,200.0,Gibson,Les Paul,Electric,Unspecified,Unspecified
 555555555,250.0,Unspecified,M,Acoustic,Unspecified,Maple
 666666666,500.0,Gibson,M,Electric,Mahogany,Cocobolo
+000000000,250.0,Fender,X,Electric,Maple,Maple
+333666999,888.0,Gibson,O,Acoustic,Maple,Maple
