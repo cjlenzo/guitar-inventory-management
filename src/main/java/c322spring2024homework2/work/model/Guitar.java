@@ -2,15 +2,23 @@
 package c322spring2024homework2.work.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import jakarta.persistence.*;
 
+@Entity
+@Table(schema = "guitars")
 public class Guitar {
 
+    @Id
     private final String serialNumber;
     private double price;
+    @Enumerated(EnumType.STRING)
     private final Builder builder;
     private final String model;
+    @Enumerated(EnumType.STRING)
     private final Type type;
+    @Enumerated(EnumType.STRING)
     private final Wood backWood;
+    @Enumerated(EnumType.STRING)
     private final Wood topWood;
 
     public enum Builder {
@@ -137,7 +145,7 @@ public class Guitar {
         return price;
     }
 
-    public void setPrice(float newPrice) {
+    public void setPrice(double newPrice) {
         price = newPrice;
     }
 

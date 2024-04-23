@@ -24,7 +24,7 @@ public class UserDetailsSecurityService implements UserDetailsService {
             if(customer == null) {
                 throw new UsernameNotFoundException("");
             }
-            return User.withUsername(username).password(customer.password()).build();
+            return User.withUsername(username).password(customer.getPassword()).build();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

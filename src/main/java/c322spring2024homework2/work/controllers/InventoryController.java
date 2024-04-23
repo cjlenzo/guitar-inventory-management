@@ -25,23 +25,30 @@ public class InventoryController {
             Guitar.Type t = Guitar.Type.toEnum(type);
             Guitar.Wood bW = Guitar.Wood.toEnum(backWood);
             Guitar.Wood tW = Guitar.Wood.toEnum(topWood);
-            Guitar searchGuitar = new Guitar(serialNumber, -1, b, model, t, bW, tW);
-            if (price.isPresent()) {
-                float newPrice = price.get().floatValue();
-                searchGuitar.setPrice(newPrice);
-                return inventoryRepository.search(searchGuitar);
-            }
-            else {
-                return inventoryRepository.search(searchGuitar);
-            }
+            System.out.println("Serial Number: " + serialNumber);
+            System.out.println("Builder: " + b);
+            System.out.println("Model: " + model);
+            System.out.println("Type: " + t);
+            System.out.println("Back Wood: " + bW);
+            System.out.println("Top Wood: " + tW);
+            List<Guitar> guitars = inventoryRepository.search(serialNumber.isEmpty() ? null : serialNumber,
+                                                              price.isPresent() ? price.get().doubleValue() : null,
+                                                              b.toString().equals("Unspecified") ? null : b.toString(),
+                                                              model.isEmpty() ? null : model,
+                                                              t.toString().equals("Unspecified") ? null : t.toString(),
+                                                              bW.toString().equals("Unspecified") ? null : bW.toString(),
+                                                              tW.toString().equals("Unspecified") ? null : tW.toString());
+            System.out.println(guitars.size() + " guitars found.");
+            return guitars;
         }
-        catch (IOException e) {
+        catch (Exception e) {
+            System.out.println(e.getMessage());
             return null;
         }
     }
 
     @PostMapping
-    public boolean add(@RequestBody Guitar data) {
+    public Guitar add(@RequestBody Guitar data) {
         try {
             String sN = data.getSerialNumber();
             double p = data.getPrice();
@@ -51,18 +58,18 @@ public class InventoryController {
             Guitar.Wood bW = data.getBackWood();
             Guitar.Wood tW = data.getTopWood();
             Guitar newGuitar = new Guitar(sN, p, b, m, t, bW, tW);
-            boolean returnValue = inventoryRepository.addGuitar(newGuitar);
+            Guitar returnValue = inventoryRepository.save(newGuitar);
             return returnValue;
         }
         catch (Exception e) {
-            return false;
+            return null;
         }
     }
 
     @GetMapping("/find/{sN}")
     public Guitar find(@PathVariable String sN) {
         try {
-            return inventoryRepository.getGuitar(sN);
+            return inventoryRepository.findBySerialNumber(sN);
         }
         catch (Exception e) {
             return null;

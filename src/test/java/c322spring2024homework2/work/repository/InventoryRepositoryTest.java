@@ -19,7 +19,7 @@ class InventoryRepositoryTest {
     void addOneGuitar() throws IOException {
         try {
             Guitar guitarToAdd = new Guitar("123456789", 100, Guitar.Builder.toEnum("Fender"), "Stratocaster", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Indian Rosewood"), Guitar.Wood.toEnum("Maple"));
-            InventoryRepository inventoryRepository = new InventoryRepository();
+            InventoryFileRepository inventoryRepository = new InventoryFileRepository();
             boolean returnValue = inventoryRepository.addGuitar(guitarToAdd);
             assertEquals(true, returnValue);
             Path path = Path.of("guitars_database.txt");
@@ -48,7 +48,7 @@ class InventoryRepositoryTest {
             Guitar guitar3 = new Guitar("333333333", 150, Guitar.Builder.toEnum("Fender"), "Telecaster", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Oak"), Guitar.Wood.toEnum("Redwood"));
             Guitar guitar4 = new Guitar("444444444", 200, Guitar.Builder.toEnum("Gibson"), "Les Paul", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Birch"), Guitar.Wood.toEnum("Oak"));
             Guitar guitar5 = new Guitar("555555555", 250, Guitar.Builder.toEnum("Yamaha"), "M", Guitar.Type.toEnum("Acoustic"), Guitar.Wood.toEnum("Spruce"), Guitar.Wood.toEnum("Maple"));
-            InventoryRepository inventoryRepository = new InventoryRepository();
+            InventoryFileRepository inventoryRepository = new InventoryFileRepository();
             boolean returnValue1 = inventoryRepository.addGuitar(guitar1);
             boolean returnValue2 = inventoryRepository.addGuitar(guitar2);
             boolean returnValue3 = inventoryRepository.addGuitar(guitar3);
@@ -117,7 +117,7 @@ class InventoryRepositoryTest {
             Guitar guitar3 = new Guitar("333333333", 150, Guitar.Builder.toEnum("Fender"), "Telecaster", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Oak"), Guitar.Wood.toEnum("Redwood"));
             Guitar guitar4 = new Guitar("444444444", 200, Guitar.Builder.toEnum("Gibson"), "Les Paul", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Birch"), Guitar.Wood.toEnum("Oak"));
             Guitar guitar5 = new Guitar("555555555", 250, Guitar.Builder.toEnum("Yamaha"), "M", Guitar.Type.toEnum("Acoustic"), Guitar.Wood.toEnum("Spruce"), Guitar.Wood.toEnum("Maple"));
-            InventoryRepository inventoryRepository = new InventoryRepository();
+            InventoryFileRepository inventoryRepository = new InventoryFileRepository();
             Guitar returnGuitar1 = inventoryRepository.getGuitar("111111111");
             Guitar returnGuitar2 = inventoryRepository.getGuitar("222222222");
             Guitar returnGuitar3 = inventoryRepository.getGuitar("333333333");
@@ -175,7 +175,7 @@ class InventoryRepositoryTest {
             Guitar guitar3 = new Guitar("333333333", 150, Guitar.Builder.toEnum("Fender"), "Telecaster", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Oak"), Guitar.Wood.toEnum("Redwood"));
             Guitar guitar4 = new Guitar("444444444", 200, Guitar.Builder.toEnum("Gibson"), "Les Paul", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Birch"), Guitar.Wood.toEnum("Oak"));
             Guitar guitar5 = new Guitar("555555555", 250, Guitar.Builder.toEnum("Yamaha"), "M", Guitar.Type.toEnum("Acoustic"), Guitar.Wood.toEnum("Spruce"), Guitar.Wood.toEnum("Maple"));
-            InventoryRepository inventoryRepository = new InventoryRepository();
+            InventoryFileRepository inventoryRepository = new InventoryFileRepository();
             Guitar searchMethod1 = new Guitar("", -1, Guitar.Builder.toEnum("Fender"), "", Guitar.Type.toEnum(""), Guitar.Wood.toEnum(""), Guitar.Wood.toEnum(""));
             Guitar searchMethod2 = new Guitar("333333333", 150, Guitar.Builder.toEnum("Fender"), "Telecaster", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum("Oak"), Guitar.Wood.toEnum("Redwood"));
             Guitar searchMethod3 = new Guitar("", -1, Guitar.Builder.toEnum(""), "", Guitar.Type.toEnum("Electric"), Guitar.Wood.toEnum(""), Guitar.Wood.toEnum(""));

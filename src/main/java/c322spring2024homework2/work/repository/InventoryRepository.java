@@ -1,102 +1,30 @@
 package c322spring2024homework2.work.repository;
 
 import c322spring2024homework2.work.model.Guitar;
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
-import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class InventoryRepository {
-
-    private static final String NEW_LINE = System.lineSeparator();
-
-    private static final String DATABASE_NAME = "guitars_database.txt";
-
-    public InventoryRepository() throws IOException {
-        Path path = Path.of(DATABASE_NAME);
-        if (!Files.exists(path)) {
-            Files.createFile(path);
-        }
-    }
-
-    private static void appendToFile(Path path, String content) throws IOException {
-        Files.write(path, content.getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-    }
-
-    public boolean addGuitar(Guitar guitarToAdd) throws IOException {
-        Path path = Path.of(DATABASE_NAME);
-        String data = guitarToAdd.getSerialNumber() + "," + guitarToAdd.getPrice() + "," + guitarToAdd.getBuilder().toString() + "," + guitarToAdd.getModel() + "," + guitarToAdd.getType().toString() + "," + guitarToAdd.getBackWood().toString() + "," + guitarToAdd.getTopWood().toString() + NEW_LINE;
-        Guitar foundGuitarWithSameSerial = getGuitar(guitarToAdd.getSerialNumber());
-        if (foundGuitarWithSameSerial == null) {
-            appendToFile(path, data);
-        }
-        return true;
-    }
-
-    public Guitar getGuitar(String serialNumber) throws IOException {
-        Guitar returnGuitar = null;
-        Path path = Path.of(DATABASE_NAME);
-        List<String> data = Files.readAllLines(path);
-        boolean found = false;
-        for (String line: data) {
-            String[] guitarData = line.split(",");
-            String checkSN = guitarData[0];
-            if (checkSN.equals(serialNumber)) {
-                double checkPrice = Double.parseDouble(guitarData[1]);
-                Guitar.Builder checkBuilder = Guitar.Builder.toEnum(guitarData[2]);
-                String checkModel = guitarData[3];
-                Guitar.Type checkType = Guitar.Type.toEnum(guitarData[4]);
-                Guitar.Wood checkBackWood = Guitar.Wood.toEnum(guitarData[5]);
-                Guitar.Wood checkTopWood = Guitar.Wood.toEnum(guitarData[6]);
-                returnGuitar = new Guitar(checkSN, checkPrice, checkBuilder, checkModel, checkType, checkBackWood, checkTopWood);
-                found = true;
-                break;
-            }
-        }
-        if (found) {
-            return returnGuitar;
-        }
-        else {
-            return null;
-        }
-    }
-
-    public List<Guitar> search(Guitar searchGuitar) throws IOException {
-        List<Guitar> returnList = new ArrayList<>();
-        Path path = Path.of(DATABASE_NAME);
-        List<String> data = Files.readAllLines(path);
-        for (String line: data) {
-            String[] guitarData = line.split(",");
-            String checkSN = guitarData[0];
-            double checkPrice = Double.parseDouble(guitarData[1]);
-            Guitar.Builder checkBuilder = Guitar.Builder.toEnum(guitarData[2]);
-            String checkModel = guitarData[3];
-            Guitar.Type checkType = Guitar.Type.toEnum(guitarData[4]);
-            Guitar.Wood checkBackWood = Guitar.Wood.toEnum(guitarData[5]);
-            Guitar.Wood checkTopWood = Guitar.Wood.toEnum(guitarData[6]);
-            if (searchGuitar.getSerialNumber().equals(checkSN) || searchGuitar.getSerialNumber().isEmpty()) {
-                if (searchGuitar.getPrice() == checkPrice || searchGuitar.getPrice() == -1) {
-                    if (searchGuitar.getBuilder() == checkBuilder || searchGuitar.getBuilder() == Guitar.Builder.UNSPECIFIED) {
-                        if (searchGuitar.getModel().equals(checkModel) || searchGuitar.getModel().isEmpty()) {
-                            if (searchGuitar.getType() == checkType || searchGuitar.getType() == Guitar.Type.UNSPECIFIED) {
-                                if (searchGuitar.getBackWood() == checkBackWood|| searchGuitar.getBackWood() == Guitar.Wood.UNSPECIFIED) {
-                                    if (searchGuitar.getTopWood() == checkTopWood || searchGuitar.getTopWood() == Guitar.Wood.UNSPECIFIED) {
-                                        Guitar guitar = new Guitar(checkSN, checkPrice, checkBuilder, checkModel, checkType, checkBackWood, checkTopWood);
-                                        returnList.add(guitar);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        return returnList;
-    }
+@Repository
+public interface InventoryRepository extends CrudRepository<Guitar, String> {
+    Guitar save (Guitar guitar);
+    Guitar findBySerialNumber(String serialNumber);
+    @Query("SELECT g FROM Guitar g WHERE " +
+            "(:serialNumber IS NULL OR g.serialNumber = :serialNumber) AND " +
+            "(:price IS NULL OR g.price = :price) AND " +
+            "(:builder IS NULL OR g.builder = :builder) AND " +
+            "(:model IS NULL OR g.model = :model) AND " +
+            "(:guitarType IS NULL OR g.type = :guitarType) AND " +
+            "(:backWood IS NULL OR g.backWood = :backWood) AND " +
+            "(:topWood IS NULL OR g.topWood = :topWood)")
+    List<Guitar> search(@Param("serialNumber") String serialNumber,
+                        @Param("price") Double price,
+                        @Param("builder") String builder,
+                        @Param("model") String model,
+                        @Param("guitarType") String guitarType,
+                        @Param("backWood") String backWood,
+                        @Param("topWood") String topWood);
 }

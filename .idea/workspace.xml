@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Changes for lab 7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/Jwks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/KeyGeneratorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/UserDetailsSecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    <list default="true" id="b4784f65-6566-4adf-ab86-d176330a7b1a" name="Changes" comment="Changes for Homework 8">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reboot.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/CustomerFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-production.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guitars_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/guitars_database.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/controllers/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/model/Guitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/repository/InventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/UserDetailsSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c322spring2024homework2/work/security/UserDetailsSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/c322spring2024homework2/work/repository/InventoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/c322spring2024homework2/work/repository/InventoryRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +35,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Dockerfile" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,32 +74,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/colin/IdeaProjects/c322-lab9-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/colin/IdeaProjects/c322-spring2024-homework2/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;67e92c8765a9bc7fb2d335c459de9eb5&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/colin/IdeaProjects/c322-lab10-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/colin/IdeaProjects/c322-spring2024-homework2/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "67e92c8765a9bc7fb2d335c459de9eb5",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -101,14 +108,58 @@
       <recent name="c322spring2024homework2.work.repository" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.WorkApplication">
     <configuration name="WorkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="database_host" value="dpg-cogm9ufsc6pc73ceovj0-a.ohio-postgres.render.com:5432" />
+        <env name="database_name" value="spring2024_database_3w03" />
+        <env name="database_password" value="z1UGVMvXAsOckxt4zMIvE96ptl3oYhgh" />
+        <env name="database_username" value="spring2024_customer" />
+      </envs>
       <module name="work" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="c322spring2024homework2.work.WorkApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.guitar-database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="guitar-database" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yaml.guitar-database: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Spring Boot.WorkApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.guitar-database: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,7 +201,9 @@
       <workItem from="1709789260024" duration="722000" />
       <workItem from="1710814803897" duration="45000" />
       <workItem from="1712863085595" duration="140000" />
-      <workItem from="1712870138633" duration="4392000" />
+      <workItem from="1712870138633" duration="5315000" />
+      <workItem from="1712894611915" duration="453000" />
+      <workItem from="1713823777913" duration="14772000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 2 submission, Hopefully actions works.">
       <option name="closed" value="true" />
@@ -224,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709790402032</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changes for Homework 8">
+      <option name="closed" value="true" />
+      <created>1712893118873</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712893118873</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +311,8 @@
     <MESSAGE value="Changes for docker and access token" />
     <MESSAGE value="Changes for docker and access token 2" />
     <MESSAGE value="Changes for lab 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes for lab 7" />
+    <MESSAGE value="Changes for Homework 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes for Homework 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
